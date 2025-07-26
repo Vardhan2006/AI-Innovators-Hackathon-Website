@@ -1,0 +1,128 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+      color: white;
+      background-color: black;
+    }
+
+    /* Background Video Section */
+    video.bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Navbar Section */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: relative;
+      z-index: 1;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ff00ff; /* Neon pink */
+    }
+
+    nav .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav .nav-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav .nav-links a:hover {
+      color: #ff66ff;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: calc(100vh - 100px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .hero h1 span:first-child {
+      color: #ff00ff;
+    }
+
+    .hero h1 span:last-child {
+      color: #00ffff;
+    }
+
+    .hero p {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      color: #cc66ff;
+    }
+
+    .info {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: #00ffff;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .info div {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .cta {
+      margin-top: 2rem;
+    }
+
+    .cta a {
+      background-color: #ff00ff;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 20px #ff00ff;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: #e600e6;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 4rem;
+      }
+    }
+ 
