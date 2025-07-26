@@ -17,6 +17,11 @@
       <h1>Agentic AI</h1>
       <span>Hackathon 2025</span>
     </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#themes">Themes</a></li>
@@ -303,6 +308,14 @@
       lastScrollTop = scrollTop;
     });
 
+    // Hamburger menu toggle
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
   </script>
 
 
