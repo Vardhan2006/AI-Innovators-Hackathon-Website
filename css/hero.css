@@ -964,6 +964,7 @@ footer::after {
   border: 1px solid rgba(60, 0, 115, 0.2);
   position: relative;
   overflow: hidden;
+  word-wrap: break-word;
 }
 
 .section-description::before {
@@ -1109,6 +1110,162 @@ footer::after {
 
   .about-box p {
     font-size: 14px;
+  }
+  
+  /* Theme boxes mobile styles */
+  .themes-section {
+    padding: 60px 20px;
+  }
+  
+  .themes-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .theme-boxes {
+    gap: 20px;
+  }
+  
+  .theme-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 25px 20px;
+  }
+  
+  .theme-box h3 {
+    font-size: 18px;
+  }
+  
+  .theme-box .theme-desc {
+    font-size: 14px;
+    opacity: 1;
+    max-height: none;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  
+  .theme-box .icon {
+    margin-bottom: 15px;
+  }
+  
+  .theme-box .icon lottie-player {
+    width: 60px !important;
+    height: 60px !important;
+    margin: 0 auto;
+  }
+  
+  /* Schedule section mobile styles */
+  .schedule-section {
+    padding: 60px 15px;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .day-card {
+    padding: 25px 20px;
+    margin: 20px auto;
+  }
+  
+  .day-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .day-date {
+    font-size: 18px;
+  }
+  
+  .day-badge {
+    font-size: 12px;
+    padding: 6px 12px;
+    display: inline-block;
+    width: auto;
+  }
+  
+  .schedule-list {
+    flex-direction: column;
+  }
+  
+  .schedule-list li {
+    flex: 0 0 100%;
+    font-size: 15px;
+    padding-left: 30px;
+    margin-bottom: 12px;
+  }
+  
+  /* Prize cards mobile styles */
+  .prizes-section {
+    padding: 60px 15px;
+  }
+  
+  .prize-cards {
+    gap: 20px;
+  }
+  
+  .prize-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 15px 0;
+    padding: 25px 20px;
+  }
+  
+  .prize-amount {
+    font-size: 18px;
+  }
+  
+  .prize-title {
+    font-size: 16px;
+  }
+  
+  .prize-desc {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .prize-icon {
+    margin-bottom: 15px;
+  }
+  
+  .prize-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Section description mobile styles */
+  .section-description {
+    font-size: 16px;
+    padding: 20px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+  
+  /* Contact form mobile styles */
+  .contact-form {
+    max-width: 100%;
+    padding: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  /* Fix for any overflowing content */
+  img, svg, video, canvas, audio, iframe, embed, object {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Ensure all containers have proper padding */
+  section {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
